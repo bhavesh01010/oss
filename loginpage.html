@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    #table{
+        padding: 40px;
+        width: 100%;
+    }
+    table,th,tr,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    th{
+        padding: 20px;
+    }
+    .login_form{
+        text-align: center;
+        padding: 30px;
+    }
+</style>
+<body>
+    <div>
+        <img src="images.png" style="float: left;" alt="logo">
+        <h2 style="text-align: center; font-size: 40px;padding: 90px;">AJAY KUMAR GARG ENGINEERING COLLEGE</h2>
+    </div>
+    <table id="table">
+        <tr id="head">
+            <th><a href="project.html">Home</a></th>
+            <th><a href="loginpage.html">Login</a></th>
+            <th>Registration</th>
+            <th>Catalogue</th>
+            <th>Cart</th>
+        </tr>
+        <tr>
+            <td>CSE <br> <br>
+            ECE <br> <br>
+            EEE <br> <br>
+            CIVIL <br> <br></td>
+            <td colspan="4">
+                <form action="backend.php">
+                    <div class="login_form">
+                        <div><label for="u_name">User Name</label>
+                        <input type="text" id="u_name" style="padding-right: 2px;"></div>
+                        <div><label for="password">Password</label>
+                        <input type="text" id="password"></div>
+                        <div><input type="submit" name="Submit" id="submit">
+                        <input type="reset" name="Reset" id="reset"></div>
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
